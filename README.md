@@ -9,9 +9,13 @@ To run food-delivery-app locally on your machine, follow these steps:
 1. Clone the repository:
 
    git clone https://github.com/cyberberry/food-delivery-app.git
+   
    cd food-delivery-app
+   
    Install the dependencies:
+   
    npm install
+   
    npm start
 
 ## Configuration
