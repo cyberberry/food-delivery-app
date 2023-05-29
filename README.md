@@ -1,7 +1,10 @@
 # food-delivery-app
 
 food-delivery-app is a web application that allows users to browse and order delicious dishes from various restaurants. This project provides a user-friendly interface for adding dishes to a cart, specifying order details, and submitting orders.
+
 App is available here https://cyberberry-food-delivery-app.herokuapp.com/
+
+**To submit an order and see a submit button fulfil all input fields**
 
 ## Installation
 
@@ -21,7 +24,7 @@ To run food-delivery-app locally on your machine, follow these steps:
 
 ## Configuration
 
-You must have a MongoDB configured with carts,orders and restaurants collections.
+You must have a MongoDB configured with orders and restaurants collections.
 
 MONGODB_URI: The MongoDB connection URL.
 
