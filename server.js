@@ -4,16 +4,13 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
 app.use(express.json());
 
-// MongoDB Atlas connection
-const password = 'admin';
-const dbName = 'FoodDelivery';
+const password = '';
+const dbName = '';
 
-// Connect to MongoDB
 mongoose
-    .connect(`mongodb+srv://admin:${encodeURIComponent(password)}@cluster0.zgcfwm0.mongodb.net/${dbName}?retryWrites=true&w=majority`, {
+    .connect(`mongodb+srv://:${encodeURIComponent(password)}@cluster0.zgcfwm0.mongodb.net/${dbName}?retryWrites=true&w=majority`, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
@@ -24,7 +21,6 @@ mongoose
         console.error('Error connecting to MongoDB:', err);
     });
 
-// Models
 const Restaurant = require('./models/restaurant');
 const Order = require('./models/order');
 
