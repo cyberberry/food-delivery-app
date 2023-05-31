@@ -191,6 +191,12 @@
               localStorage.removeItem('cart');
               renderCartItems();
               alert('Вже готується!');
+      
+              document.getElementById('name').value = '';
+              document.getElementById('email').value = '';
+              document.getElementById('phone').value = '';
+              document.getElementById('address').value = '';
+              document.getElementById('final-price').value = '';
             })
             .catch(error => {
               console.error(error);
